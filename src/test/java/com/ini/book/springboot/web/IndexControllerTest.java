@@ -9,9 +9,10 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT;
 
 @ExtendWith(SpringExtension.class)
-@SpringBootTest(webEnvironment =  SpringBootTest.WebEnvironment.RANDOM_PORT) // 랜덤 포트 실행
+@SpringBootTest(webEnvironment =  RANDOM_PORT) // 랜덤 포트 실행
 public class IndexControllerTest {
 
     @Autowired
